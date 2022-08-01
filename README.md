@@ -4,7 +4,7 @@
 
 ## _schedule anime according to your time_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]([https://travis-ci.org/joemccann/dillinger](https://62e7d430c322be5599055c36--anime-keep.netlify.app/))
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]([https://62e7d430c322be5599055c36--anime-keep.netlify.app/])
 
 ## Project hosted on [Anime-keep](https://62e7d430c322be5599055c36--anime-keep.netlify.app/)
 
