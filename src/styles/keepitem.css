@@ -1,0 +1,170 @@
+:root{
+ --greenish:rgb(96, 252, 96);
+ --greyish:rgb(61, 56, 56);
+}
+
+.keepitem{
+  width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-bottom:5px;
+}
+
+.keepitem figure{
+ width: 20%;
+}
+
+.keepitem figcaption{
+ width: 45%;
+}
+
+.keepitem .keepimg{
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+}
+
+.play,.delete,.edit{
+ display: flex;
+  width: 40%;
+  justify-content: flex-end;
+  /* text-align: right; */
+}
+
+.edit{
+ width: 20%;
+}
+
+
+.btnplay,.btndelete,.btnedit{
+   border: none;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1em;
+    font-weight: bolder;
+    color: var(--pinkish);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.btnedit{
+ border-radius: 0;
+ background-color:transparent;
+ width: 5px;
+ text-align: center;
+}
+
+
+/* .btndelete{
+ color: var(--white);
+} */
+
+.btns{
+ width: 40%;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ /* gap: 10px; */
+}
+
+.editModal{
+ position: absolute;
+ top: 1%;
+ width: 70vw;
+ left: 15%;
+ background-color: var(--white);
+ padding: 10px;
+ border-radius: 10px 10px 10px 10px;
+}
+
+.closemodal{
+ display: inline;
+ float: right;
+}
+
+.closemodal button{
+ position: absolute;
+ left: -5px;
+ top: -5px;
+ border-radius: 50%;
+ font-size: 1.2em;
+ border: none;
+ background-color: var(--pinkish);
+}
+
+.editModal .modaldescription,.views{
+ display: flex;
+ width: 100%;
+ color: var(--greyish);
+ text-align: center;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-weight: normal;
+ justify-content: space-around;
+}
+
+.labels{
+ width: 30%;
+ gap: 6px;
+ display: flex;
+ flex-direction: column;
+ /* justify-content: center; */
+}
+
+.inputs{
+ width: 50%;
+ display: flex;
+ gap: 6px;
+ flex-direction: column;
+}
+
+.inputs input{
+ border-radius: 5px 5px 5px 5px;
+ border: 1px solid rgba(107, 106, 106, 0.42); 
+ height: 20px;
+ font-size: 11px;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+ font-weight: lighter;
+ color:rgb(70, 70, 70);
+}
+
+.textarea{
+ padding: 7px;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+.textarea textarea{
+  border-radius: 5px 5px 5px 5px;
+   border: 1px solid rgba(107, 106, 106, 0.42);
+    font-size: 11px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: lighter;
+     color: rgb(70, 70, 70);
+}
+
+.views{
+ margin-top: 5px;
+}
+
+.modalbtn{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.modalbtn Button{
+ height: 30px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-size:15px;
+ border: none;
+ color: var(--white);
+ background-color: var(--pinkish);
+ border-radius: 5px 5px 5px 5px;
+}

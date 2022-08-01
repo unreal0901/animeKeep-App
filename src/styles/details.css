@@ -1,0 +1,73 @@
+
+.animetitle{
+  padding:10px 0px;
+}
+
+.animetitle h2,a{
+display: inline-block;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 300;
+color: var(--white);
+text-decoration: none;
+}
+
+.animetitle a{
+ margin-left: 10px;
+cursor: pointer;
+color: var(--pinkish);
+}
+
+.animetitle h3{
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: 100;
+ color: rgba(251, 251, 251, 0.697);
+}
+
+.subdetails{
+ display: flex;
+ flex-direction: column;
+}
+
+.synopsis{
+ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-size:14px;
+ letter-spacing: 1.1px;
+ font-weight: 200;
+ /* font */
+}
+
+.ruler{
+ margin: auto ;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ width: 70%;
+ border: 0.1px solid var(--pinkish);
+}
+
+.categories{
+ display: flex;
+ justify-content: space-evenly;
+ gap: 20px;
+}
+
+.categories .semidetails{
+ width: 60%;
+ font-size: 15px;
+}
+
+.fullep{}
+
+.categories .types{
+ width: 30%;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+.types p{
+ padding:4px;
+ text-align: center;
+ background-color: var(--pinkish);
+ border-radius: 10px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

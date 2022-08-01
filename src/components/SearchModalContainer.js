@@ -2,7 +2,7 @@ import React from "react";
 import AddtoKeep from "./AddtoKeep";
 import "../styles/searchModalContainer.css";
 
-const SearchModalContainer = ({ searchResult }) => {
+const SearchModalContainer = ({ loading, searchResult }) => {
   function getSeason(month) {
     switch (month) {
       case 0:
@@ -56,7 +56,6 @@ const SearchModalContainer = ({ searchResult }) => {
             const year = dateObj.getFullYear();
             const month = dateObj.getMonth();
             const season = getSeason(month);
-            console.log(year, month, season);
             return (
               <div key={item.id} className="item">
                 <figure>
@@ -69,7 +68,7 @@ const SearchModalContainer = ({ searchResult }) => {
                 <figcaption>
                   <div className="description">
                     <p className="title">{capitalize(mainTitle)}</p>
-                    <p>
+                    <p className="showTypeEp">
                       <span className="showType">
                         {capitalize(showType)}&nbsp;-&nbsp;
                       </span>

@@ -1,0 +1,146 @@
+:root{
+ --red:rgb(223, 73, 73);
+ --green:rgb(43, 69, 6);
+  --dark1: #000000;
+   --gray: rgb(72, 68, 68);
+   --white: rgb(255, 255, 255);
+   --lightwhite: rgb(216, 215, 215);
+   --pinkish: rgb(211, 70, 173);
+}
+
+.containerkeep{
+ /* position: relative; */
+ background-color: black;
+ width: 100%;
+ /* height: calc(100vh - 80px); */
+ min-height: calc(100vh - 80px);
+ display: flex;
+ flex-direction: row;
+}
+
+.emptycontainer{
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+
+padding-top: 30px;
+
+ justify-content: center;
+ align-items: center;
+}
+
+.emptycontainer i{
+ font-size: 200px;
+ color: rgba(211, 70, 173, 0.383);
+}
+
+.emptycontainer p{
+ color: rgba(255, 255, 255, 0.611);
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-weight: 700;
+ font-size: 30px;
+}
+
+.animestack{
+ width: 30%;
+ color: white;
+}
+
+.fullview{
+ width: 70%;
+ color: white;
+}
+
+.errorExist,.addNoti{
+ transform: translateX(50vw);
+ z-index: 1000;
+ letter-spacing: 1.5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position:absolute;
+ background-color:var(--red);
+height: 40px;
+ width: 200px;
+ border-radius: 10px;
+ font-size: large;
+ font-family: 'Roboto ',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.addNoti{
+  background-color: var(--green);
+}
+
+
+
+
+
+@media only screen and (max-width:450px) {
+ .errorExist{
+  transform: translateX(18vw);
+ }
+
+  .addNoti {
+  transform: translateX(18vw);
+  }
+
+ .containerkeep{
+  position: relative;
+  display: block;
+ }
+.animestack{
+ width: 100vw;
+ padding: 10px;
+}
+.fullview{
+position: absolute;
+padding:25px;
+background-color: var(--dark1);
+top: 0px;
+width: 100vw;
+height: 100%;
+overflow-y: scroll;
+display: flex;
+flex-direction: column;
+justify-content:flex-start;
+ display: none;
+  transform: translateX(100%);
+  transition: transform ease-in-out 1s;
+}
+
+.view {
+ display: flex;
+ transform: translateX(0);
+}
+
+ button.closeBtn {
+ position: absolute;
+ top: 85px;
+ right: 11em;
+ z-index: 100;
+}
+
+.wrapperiframe{
+     overflow-x: clip;
+      max-width: 100%;
+}
+
+.video{
+    position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 25px;
+     width: 300%;
+     left: -100%;
+}
+
+.video iframe{
+position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+} 
+
+
+
+}
