@@ -12,12 +12,15 @@
  .topNav{
   padding:10px 7px;
   display: flex;
+  width: 100vw;
   height: 80px;
   background-color:var(--dark);
   align-items: center;
   justify-content: center;
  }
  
+
+
  .topNav>.logo>a>h1{
   width: 100%;
   color: var(--white);
@@ -114,4 +117,5 @@ box-shadow: 0px 0px 9px 3px var(--pinkish);
     font-family:Arial, Helvetica, sans-serif;
     font-size: .8em;
    }
+
   }

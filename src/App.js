@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import KeepContainer from "./components/KeepContainer";
 import SearchModal from "./components/SearchModal";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 export const keepContext = React.createContext();
 const App = () => {
@@ -155,7 +155,7 @@ const App = () => {
         />
         <KeepContainer myKeep={myKeep} setMyKeep={setMyKeep} filter={filter} />
       </keepContext.Provider>
-      <Footer />
+
       {/* </div> */}
     </>
   );

@@ -3,6 +3,7 @@ import "../styles/keepContainer.css";
 import { keepContext } from "../App";
 import KeepItem from "./KeepItem";
 import Detail from "./Detail";
+// import Footer from "./Footer";
 const KeepContainer = ({ myKeep, filter, setMyKeep }) => {
   const [id, setId] = useState(null);
   const { exist, added, open, setOpen, empty } = useContext(keepContext);
@@ -10,16 +11,22 @@ const KeepContainer = ({ myKeep, filter, setMyKeep }) => {
 
   // if (ele) ele.addEventListener("click", handleClose);
   function handleClose() {
-    console.log("clicked");
+    let ele = document.querySelector(".animestack");
     if (open[1]) setOpen([null, false]);
+    open[0] === null
+      ? (ele.style.display = "none")
+      : (ele.style.display = "block");
+    setId(null);
   }
 
-  // console.log(open[0]);
+  console.log(id);
+  console.log(myKeep);
+  console.log(open);
 
   return (
     <>
       <div id="containerkeep" className="containerkeep">
-        {empty ? (
+        {myKeep.length === 0 ? (
           <div className="emptycontainer">
             <i className="fa-solid fa-book-open"></i>
             <p>Add Some animes</p>
@@ -60,13 +67,21 @@ const KeepContainer = ({ myKeep, filter, setMyKeep }) => {
             return null;
           })}
         </div>
-        {open[1] ? (
+
+        {open[1] && myKeep.length > 0 ? (
           <button className="closeBtn" onClick={handleClose}>
             <i className="fa-solid fa-xmark"></i>
           </button>
         ) : null}
 
-        {open[1] ? (
+        {id === null ? (
+          <div className="watch">
+            <p>
+              <i class="fa-solid fa-circle-play"></i>
+            </p>
+          </div>
+        ) : null}
+        {open[1] && myKeep.length > 0 ? (
           <>
             <div className="fullview">
               <div className="wrapperiframe">
@@ -89,6 +104,7 @@ const KeepContainer = ({ myKeep, filter, setMyKeep }) => {
           </>
         ) : null}
       </div>
+      {/* {open[0] === null ? <Footer /> : null} */}
     </>
   );
 };

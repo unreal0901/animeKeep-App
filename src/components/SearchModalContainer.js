@@ -31,7 +31,7 @@ const SearchModalContainer = ({ loading, searchResult }) => {
   }
 
   function capitalize(str) {
-    return str.slice(0, 1).toUpperCase() + str.slice(1);
+    if (str) return str.slice(0, 1).toUpperCase() + str.slice(1);
   }
 
   return (

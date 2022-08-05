@@ -73,7 +73,8 @@
 
 .editModal{
  position: absolute;
- top: 1%;
+ z-index: 100;
+ top: 25%;
  width: 70vw;
  left: 15%;
  background-color: var(--white);
@@ -167,4 +168,30 @@ align-items: center;
  color: var(--white);
  background-color: var(--pinkish);
  border-radius: 5px 5px 5px 5px;
+}
+
+
+@media only screen and (min-width:450px) {
+
+ .keepitem{
+  padding:5px
+ }
+
+.status{
+ display: none;
+}
+
+ .keepitem figcaption{
+  width: 40%;
+ }
+
+ .keepitem:hover{
+   background-color: var(--pinkish);
+ }
+
+ .keepitem:hover .btnedit{
+  color: var(--white);
+ }
+
+
 }

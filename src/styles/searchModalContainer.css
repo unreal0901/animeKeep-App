@@ -118,7 +118,7 @@ figcaption{
  font-size: .8em;
 }
 
-.ep,.airDetails{
+.ep,.airDetails,.status{
  color: var(--lightwhite);
  font-weight: 500;
  font-family: Arial, Helvetica, sans-serif;

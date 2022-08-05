@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <div className="used">
         <a href="#containerkeep">
-          <i class="fa-solid fa-circle-nodes"></i>
+          <i className="fa-solid fa-circle-nodes"></i>
         </a>
         <p>Used Kitsune API</p>
       </div>

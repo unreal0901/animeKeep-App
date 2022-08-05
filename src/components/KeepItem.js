@@ -50,12 +50,21 @@ const KeepItem = ({
   }
 
   function capitalize(str) {
-    return str.slice(0, 1).toUpperCase() + str.slice(1);
+    if (str) return str.slice(0, 1).toUpperCase() + str.slice(1);
   }
 
   function toggleFull(yid, id) {
-    open[1] ? setId(null) : setId(id);
-    open[0] ? setOpen([null, false]) : setOpen([yid, true]);
+    let ele = document.querySelector(".animestack");
+    setId(id);
+    setOpen([yid, true]);
+    if (window.innerWidth > 450) {
+      ele.style.display = "block";
+    } else if (open[0]) {
+      ele.style.display = "block";
+    } else {
+      ele.style.display = "none";
+    }
+    // open[0] ? (ele.style.display = "block") : (ele.style.display = "none");
   }
 
   const {
@@ -84,8 +93,9 @@ const KeepItem = ({
             <span className="showType">
               {capitalize(showType)}&nbsp;-&nbsp;
             </span>
-            <span className="ep">
-              {episodeCount}&nbsp;Episodes&nbsp;({capitalize(status)}
+            <span className="ep">{episodeCount}&nbsp;Episodes&nbsp;</span>
+            <span className="status">
+              ({capitalize(status)}
               &nbsp;
               {status === "finished" || status === "current" ? "Airing" : ""})
             </span>
