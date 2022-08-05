@@ -10,7 +10,7 @@
 
 Anime-keep is a small react project that will help in storage of your favourite anime,edit it and in future it will have scheduling too.
 
-### Currently it only looks good on mobile screen
+### Almost completed,just have to add analytics tab and scheduling function
 
 - Enter some anime
 - It will remain in local storage as long as you dont clear the local storage(semi persistent)
