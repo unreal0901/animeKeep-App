@@ -74,7 +74,7 @@ const KeepContainer = ({ myKeep, filter, setMyKeep }) => {
           </button>
         ) : null}
 
-        {id === null ? (
+        {id === null && myKeep.length>0 ? (
           <div className="watch">
             <p>
               <i class="fa-solid fa-circle-play"></i>
