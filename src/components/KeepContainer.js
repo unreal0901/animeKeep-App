@@ -6,7 +6,7 @@ import Detail from "./Detail";
 // import Footer from "./Footer";
 const KeepContainer = ({ myKeep, filter, setMyKeep }) => {
   const [id, setId] = useState(null);
-  const { exist, added, open, setOpen, empty } = useContext(keepContext);
+  const { exist, added, open, setOpen } = useContext(keepContext);
   const ytURI = `https://www.youtube.com/embed/${open[0]}?controls=0&modestbranding=1`;
 
   // if (ele) ele.addEventListener("click", handleClose);
